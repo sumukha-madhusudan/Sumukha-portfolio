@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumukha M | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, #000428, #004e92);
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project {
+            background-color: #222;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 45%;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 174, 255, 0.5);
+        }
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sumukha M</h1>
+        <p>Embedded Engineer | Automotive Systems | ADAS | CAN | AUTOSAR</p>
+    </header>
+    
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate Embedded Engineer specializing in **AUTOSAR-based** software development, **automotive system testing**, and **ADAS validation**. With expertise in **CAN, LIN, UDS, and embedded C**, I have worked on critical automotive software components, ensuring compliance with **ISO-26262** safety standards. My experience includes using **EB Tresos, CANoe, IBM Rhapsody, and TESSY** for software validation and system-level debugging.</p>
+    </section>
+    
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Airbag Safety Software for AUDI, BMW, VW</h3>
+            <img src="airbag_safety.jpg" alt="Airbag Safety System">
+            <p>Developed and validated software ensuring **100% functional compliance** for airbag safety systems. Conducted unit testing using **TESSY**, implemented modular software design with **IBM Rational Rhapsody**, and ensured CI/CD integration using **Jenkins**.</p>
+        </div>
+        <div class="project">
+            <h3>ADAS Camera Validation and Testing</h3>
+            <img src="adas_camera.jpg" alt="ADAS Camera Testing">
+            <p>Conducted extensive testing of **ADAS cameras (MFC527 & MFC525)** for **Traffic Sign Assist (TSA)** and lane detection. Verified algorithms, performed regression testing, and achieved a **99% defect-free rate**.</p>
+        </div>
+        <div class="project">
+            <h3>Airbag System Testing for Honda</h3>
+            <img src="airbag_testing.jpg" alt="Honda Airbag System Testing">
+            <p>Executed **in-vehicle ECU tests** using **CANoe**, verified crash response times, and ensured compliance with industry safety regulations. Conducted **fault injection tests** to evaluate system robustness.</p>
+        </div>
+        <div class="project">
+            <h3>AUTOSAR Software Development</h3>
+            <img src="autosar_dev.jpg" alt="AUTOSAR Software Development">
+            <p>Developed and validated **AUTOSAR-based software** using **EB Tresos**. Ensured compliance with **ISO-26262**, worked on **MCAL and BSW integration**, and optimized software for enhanced automotive safety.</p>
+        </div>
+        <div class="project">
+            <h3>Robotic Arm</h3>
+            <img src="robotic_arm.jpg" alt="Robotic Arm">
+            <p>Designed and developed a **color-sorting robotic arm** with **real-time embedded control**. Optimized sorting algorithms and implemented **vision-based object detection** for efficient operation.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Contact: sumukha.madhusudan5@gmail.com | <a href="https://linkedin.com/in/sumukha" style="color: cyan;">LinkedIn</a></p>
+    </footer>
+    
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
