@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumukha M | Embedded Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body { background-color: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; }
+        header { background-color: #001f3f; padding: 15px; text-align: center; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin: 0 15px; }
+        nav ul li a { color: #00aaff; text-decoration: none; }
+        section { padding: 40px; text-align: center; }
+        .project img { width: 50%; border-radius: 10px; }
+        .project { margin-bottom: 30px; }
+        .button { background-color: #00aaff; padding: 10px 20px; border: none; color: white; border-radius: 5px; cursor: pointer; }
+        .button:hover { background-color: #0088cc; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Sumukha M</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Embedded Engineer specializing in Automotive Systems, AUTOSAR, and ADAS. Passionate about real-time systems, diagnostics, and automation.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>ADAS Camera Validation (MFC527)</h3>
+            <p>Conducted functional validation for MFC527 ADAS cameras, focusing on object detection, lane recognition, and traffic sign recognition.</p>
+            <img src="https://via.placeholder.com/400x300" alt="ADAS MFC527 Camera">
+        </div>
+        <div class="project">
+            <h3>Airbag System Testing</h3>
+            <p>Performed safety testing for airbag control modules using CANoe, ensuring compliance with ISO-26262 standards.</p>
+            <img src="https://via.placeholder.com/400x300" alt="Airbag System Testing">
+        </div>
+        <div class="project">
+            <h3>AUTOSAR Software Development</h3>
+            <p>Implemented AUTOSAR BSW and MCAL configurations using EB Tresos, ensuring seamless integration with automotive ECUs.</p>
+            <img src="https://via.placeholder.com/400x300" alt="AUTOSAR Development">
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Embedded C, Python, CAPL</li>
+            <li>AUTOSAR (BSW, MCAL, RTE), FreeRTOS</li>
+            <li>CAN, LIN, UDS</li>
+            <li>TESSY, CANoe, EB Tresos</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Systems Engineering - MathWorks</li>
+            <li>AI for Everyone - Coursera</li>
+            <li>Internet of Things and Embedded Systems</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: sumukha.
