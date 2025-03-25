@@ -4,22 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumukha M | Embedded Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
     <style>
-        body { background-color: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; }
-        header { background-color: #001f3f; padding: 15px; text-align: center; }
-        nav ul { list-style: none; padding: 0; }
-        nav ul li { display: inline; margin: 0 15px; }
-        nav ul li a { color: #00aaff; text-decoration: none; }
-        section { padding: 40px; text-align: center; }
-        .project img { width: 50%; border-radius: 10px; }
-        .project { margin-bottom: 30px; }
-        .button { background-color: #00aaff; padding: 10px 20px; border: none; color: white; border-radius: 5px; cursor: pointer; }
-        .button:hover { background-color: #0088cc; }
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1e293b;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1.5rem;
+        }
+        nav ul li a {
+            color: #64b5f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #64b5f6;
+            border-bottom: 2px solid #64b5f6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .project {
+            margin-bottom: 2.5rem;
+            border: 1px solid #374151;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        .project img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+        .project h3 {
+            color: #64b5f6;
+            margin-bottom: 0.5rem;
+        }
+        .skills-list, .certifications-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li, .certifications-list li {
+            margin-bottom: 0.5rem;
+        }
+        .contact-info {
+            margin-top: 1.5rem;
+        }
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+        .resume-button {
+            background-color: #64b5f6;
+            color: #121212;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        .resume-button:hover {
+            background-color: #42a5f5;
+        }
     </style>
 </head>
 <body>
+
     <header>
         <nav>
             <h1>Sumukha M</h1>
@@ -35,47 +108,13 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Embedded Engineer specializing in Automotive Systems, AUTOSAR, and ADAS. Passionate about real-time systems, diagnostics, and automation.</p>
+        <p>
+            As an Embedded Engineer specializing in Automotive Systems, AUTOSAR, and ADAS, I am driven by a passion for creating robust and efficient solutions that enhance vehicle safety and performance. My expertise encompasses real-time systems, diagnostics, and automation, with a strong emphasis on safety and reliability. I have hands-on experience in developing and validating automotive software and hardware, ensuring compliance with stringent industry standards such as ISO-26262. My approach is characterized by a blend of technical proficiency and a commitment to continuous learning, allowing me to adapt to the rapidly evolving automotive technology landscape. I thrive in collaborative environments and am dedicated to delivering high-quality, innovative solutions that contribute to the advancement of automotive systems.
+        </p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>ADAS Camera Validation (MFC527)</h3>
-            <p>Conducted functional validation for MFC527 ADAS cameras, focusing on object detection, lane recognition, and traffic sign recognition.</p>
-            <img src="https://via.placeholder.com/400x300" alt="ADAS MFC527 Camera">
-        </div>
-        <div class="project">
-            <h3>Airbag System Testing</h3>
-            <p>Performed safety testing for airbag control modules using CANoe, ensuring compliance with ISO-26262 standards.</p>
-            <img src="https://via.placeholder.com/400x300" alt="Airbag System Testing">
-        </div>
-        <div class="project">
-            <h3>AUTOSAR Software Development</h3>
-            <p>Implemented AUTOSAR BSW and MCAL configurations using EB Tresos, ensuring seamless integration with automotive ECUs.</p>
-            <img src="https://via.placeholder.com/400x300" alt="AUTOSAR Development">
-        </div>
-    </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Embedded C, Python, CAPL</li>
-            <li>AUTOSAR (BSW, MCAL, RTE), FreeRTOS</li>
-            <li>CAN, LIN, UDS</li>
-            <li>TESSY, CANoe, EB Tresos</li>
-        </ul>
-    </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Systems Engineering - MathWorks</li>
-            <li>AI for Everyone - Coursera</li>
-            <li>Internet of Things and Embedded Systems</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: sumukha.
+        <div class="project">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAV9SURBVHhe7d2BTYMwEIXh/w8901iYyv6Xk0gQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI0hQhI
