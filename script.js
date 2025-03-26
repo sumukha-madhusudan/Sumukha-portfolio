@@ -1,13 +1,22 @@
-let index = 0;
+let slideIndex = 0;
+showSlides();
 
-function moveSlide(step) {
-    let slides = document.querySelector(".slides");
-    let totalSlides = document.querySelectorAll(".slides img").length;
+function showSlides() {
+    let slides = document.querySelectorAll(".slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
 
-    index += step;
-
-    if (index >= totalSlides) index = 0; // Loop back to first image
-    if (index < 0) index = totalSlides - 1; // Loop back to last image
-
-    slides.style.transform = `translateX(${-index * 100}%)`;
+function moveSlide(n) {
+    let slides = document.querySelectorAll(".slide");
+    slides[slideIndex - 1].style.display = "none";
+    slideIndex += n;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    if (slideIndex < 1) { slideIndex = slides.length; }
+    slides[slideIndex - 1].style.display = "block";
 }
