@@ -8,12 +8,12 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+
     <header>
         <nav>
             <h1>Sumukha M</h1>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#certifications">Certifications</a></li>
@@ -21,71 +21,90 @@
             </ul>
         </nav>
     </header>
-    
+
     <section id="about" class="container">
         <h2>About Me</h2>
         <p>Embedded Engineer specializing in Automotive Systems, AUTOSAR, and ADAS. Passionate about real-time systems, diagnostics, and automation. Skilled in Python scripting, CANoe, and Robot Framework for advanced test automation.</p>
     </section>
-    
-    <section id="experience" class="container">
-        <h2>Professional Experience</h2>
-        <h3>Terralogic Software Solutions Pvt Ltd (02/2025 - Present)</h3>
-        <p><strong>Software Engineer I</strong></p>
-        <ul>
-            <li>Worked on Python scripting for automation with Selenium and SQL.</li>
-            <li>Exploring Robot Framework for advanced test automation.</li>
-        </ul>
-        
-        <h3>Continental Automotive Components (India) Pvt Ltd (04/2023 – 12/2024)</h3>
-        <p><strong>Software Test Engineer & System Test Engineer</strong></p>
-        <ul>
-            <li>Developed and validated embedded C software modules ensuring robust functionality.</li>
-            <li>Executed comprehensive testing for automotive modules using TESSY, achieving 100% MC/DC coverage.</li>
-            <li>Utilized CANoe, PC diag, and EB Tresos for system testing and diagnostics.</li>
-        </ul>
-    </section>
-    
+
     <section id="projects" class="container">
         <h2>Projects</h2>
+
         <div class="slider-container">
             <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
             <div class="slider">
                 <div class="slides">
-                    <img src="ADAS.jpg" alt="ADAS MFC527 Camera">
-                    <img src="ADAS1.jpg" alt="ADAS MFC527 Camera">
-                    <img src="Air1.jpg" alt="Airbag System Testing">
-                    <img src="Air.jpg" alt="AUTOSAR Development">
+                    <div class="slide">
+                        <img src="Airbag_Software.jpg" alt="Airbag Safety Software">
+                        <div class="project-description">
+                            <h3>Airbag Safety Software for AUDI, BMW, VW</h3>
+                            <p>Developed and tested embedded C software for airbag safety systems, ensuring compliance with ISO-26262.</p>
+                            <p>Technologies: Embedded C, TESSY, IBM Rhapsody</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Airbag_Testing.jpg" alt="Airbag System Testing">
+                        <div class="project-description">
+                            <h3>Airbag System Testing for Honda</h3>
+                            <p>Validated airbag functionalities, ensuring proper deployment using real-world crash test simulations.</p>
+                            <p>Technologies: CANoe, Diagnostic Tools, UDS</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="ADAS_Camera.jpg" alt="ADAS Camera Validation">
+                        <div class="project-description">
+                            <h3>ADAS Camera Validation and Testing</h3>
+                            <p>Conducted smoke and regression testing for ADAS cameras (MFC527 & MFC525) with lane detection and Traffic Sign Assist.</p>
+                            <p>Technologies: Python, CANoe, Image Processing</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Robotic_Arm.jpg" alt="Robotic Arm">
+                        <div class="project-description">
+                            <h3>Robotic Arm for Color Sorting</h3>
+                            <p>Developed an advanced sorting algorithm for a robotic arm that categorizes objects by color.</p>
+                            <p>Technologies: Python, OpenCV, Embedded Systems</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Inventory_Robot.jpg" alt="Inventory Robot">
+                        <div class="project-description">
+                            <h3>Inventory Management Robot</h3>
+                            <p>Designed a robot to identify vacant storage spaces using computer vision, optimizing warehouse management.</p>
+                            <p>Technologies: OpenCV, Python, ROS</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
     </section>
-    
+
     <section id="skills" class="container">
         <h2>Skills</h2>
         <ul>
             <li>Embedded C, Python, CAPL</li>
-            <li>AUTOSAR (BSW, MCAL, RTE), FreeRTOS, Linux</li>
-            <li>Communication Protocols: CAN, LIN, UDS, UART, SPI, I2C</li>
-            <li>Testing Tools: TESSY, CANoe, EB Tresos, Robot Framework</li>
-            <li>Software Development: Git, Jenkins, IBM Rhapsody, DOORS</li>
+            <li>AUTOSAR (BSW, MCAL, RTE), FreeRTOS, Linux, Autosar API</li>
+            <li>CAN, LIN, UDS</li>
+            <li>TESSY, CANoe, EB Tresos</li>
         </ul>
     </section>
-    
+
     <section id="certifications" class="container">
         <h2>Certifications</h2>
         <ul>
-            <li>Systems Engineering - MathWorks (2024)</li>
+            <li>Systems Engineering - MathWorks</li>
             <li>AI for Everyone - Coursera</li>
             <li>Internet of Things and Embedded Systems - Coursera</li>
         </ul>
     </section>
-    
+
     <section id="contact" class="container">
         <h2>Contact</h2>
-        <p><strong>Email:</strong> <a href="mailto:sumukha.madhusudan5@gmail.com">sumukha.madhusudan5@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sumukha-madhusudan" target="_blank">Sumukha Madhusudan</a></p>
-        <a href="Sumukha_madhusudan.pdf" download class="button">Download Resume</a>
+        <p>Email: sumukha.madhusudan5@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sumukha-madhusudan" target="_blank">Sumukha Madhusudan</a></p>
+        <a href="Sumukha_madhusudan.docx" download class="button">Download Resume</a>
     </section>
+
 </body>
 </html>
